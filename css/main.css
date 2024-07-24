@@ -11,8 +11,13 @@ body {
 
 /** HEADER */
 
-.header {
-    background-color: yellowgreen;
+.menu-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item a:hover{
+    color: gray;
 }
 
 .container {
@@ -32,10 +37,11 @@ body {
     display: none;
 }
 
-ul.main.menu {
+ul.main-menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 @media (min-width: 768px) {

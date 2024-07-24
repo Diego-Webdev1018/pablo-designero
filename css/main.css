@@ -1,5 +1,5 @@
 * {
-    border: 1px dotted black;
+    /* border: 1px dotted black;*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -42,6 +42,7 @@ ul.main-menu {
     padding: 0;
     margin: 0;
     display: flex;
+    gap: .5rem;
 }
 
 @media (min-width: 768px) {

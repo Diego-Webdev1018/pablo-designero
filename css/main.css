@@ -37,10 +37,14 @@ body {
 }
 
 .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
     margin: 26px auto;
 }
 
@@ -69,4 +73,9 @@ ul.main-menu {
     .navbar {
         display: block;
     }
+}
+
+/** MAIN: SECTION BIOGRAPHY */
+.biography {
+    background-color: var( --pink-lace );
 }

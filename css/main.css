@@ -23,14 +23,20 @@
 
 body {
     font-family: "Epilogue", sans-serif;
+    font-weight: 300;
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1.5;
     font-size: 17px;
 }
 
 /** HEADER */
+
+#logo{
+    font-size: 20px;
+    font-weight: 600;
+}
 
 .menu-item a {
     text-decoration: none;
@@ -53,11 +59,6 @@ p {
     margin: 26px auto;
 }
 
-#logo{
-    font-size: 20px;
-    font-weight: 600;
-}
-
 .navbar {
     display: none;
 }
@@ -68,6 +69,75 @@ ul.main-menu {
     margin: 0;
     display: flex;
     gap: .5rem;
+}
+
+/**FOOTER*/
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    width: 85%;
+    padding: 4rem 0;
+}
+
+.info {
+    flex-basis: 40%;
+}
+
+strong.footer-title {
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.footer-description {
+    padding: 10% 0;
+}
+
+.social-icons {
+    display: contents;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.form {
+    flex-basis: 45%;
+}
+
+ul.form-footer {
+    list-style: none;
+}
+
+input.field {
+    width: 100%;
+    height: 70px;
+    background-color: var(--anti-flash-white);
+    margin-bottom: 5%;
+    border: none;
+    padding: 28px;
+}
+
+textarea.message {
+    width: 100%;
+    height: 200px;
+    background-color: var(--anti-flash-white);
+    margin-bottom: 5%;
+    border: none;
+    padding: 28px;
+}
+
+input.boton-form {
+    width: 40%;
+    height: 75px;
+    background-color: black;
+    color: white;
 }
 
 @media (min-width: 768px) {

@@ -8,11 +8,9 @@
     --piggy-pink: #F6DCE9;
     --pink-lace: #F9E6F0;
     --white: #ffffff;
-
-    /***/
     --height-input: 69px;
 
-    /***/
+    /**/
     --color-menu-link: var( --charleston-green-v1 );
 }
 
@@ -85,20 +83,22 @@ ul.main-menu {
 .bio {
     background-color: var( --pink-lace);
 }
-
 .bio-content {
     padding: 4.8rem 0;
 }
-
 .avatar-name {
     font-size: 17px;
     margin: 1.2rem 0;
 }
 
-.profession {
-    font-weight: normal;
+.name-designer {
+    text-decoration: underline;
 }
 
+.profession {
+    font-weight: normal;
+    display: block;
+}
 .biography {
     margin-top: 6rem;
 }
@@ -112,24 +112,56 @@ ul.main-menu {
         width: 60%;
         padding: 7rem 0;
     }
-    
     .biography {
         margin-top: initial;
+    }
+    .description-content {
+        width: 70%;
     }
 }
 
 /** Main: Section Story */
+.description-content {
+    padding: 5rem 0;
+}
+.description-content *:first-child {
+    margin-bottom: 2.5rem;
+    font-weight: normal;
+    line-height: 1.7;
+}
+.description-content p {
+    line-height: 1.7;
+}
 
+/** Inicio: Forma 1*/
+/* .description-content *:nth-child( even ) {
+    background: #009379;
+}
+.description-content *:last-child {
+    background: #FFFFFF;
+} */
+/** Fin: Forma 1 */
+/** Inicio: Forma 2 */
+/* .description-content *:nth-child(2),
+.description-content *:nth-child(4) {
+    background: blue;
+} */
 
+/* Selecciona cada elemento hijo par excepto el último */
+.description-content *:nth-child(2n):not(:nth-last-child(1)) {
+    background-color: var(--paolo-veronese-green);
+    color: var(--piggy-pink);
+    font-weight: 600;
+}     
+/** Fin: Forma 2 */
 
 /** Footer */
-
 .footer-content {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    border-top: 2px solid var(--anti-flash-white);
-    padding: 2.4rem 0;
+    border-top: 3px solid var(--anti-flash-white);
+    padding: 3rem 0;
 }
 
 @media ( min-width: 768px ) {
@@ -138,14 +170,13 @@ ul.main-menu {
     }
 }
 
+
 .lets-work {
     flex-basis: 30%;
 }
-
 .lets-work h2 {
     margin-bottom: 2.4rem;
 }
-
 ul.social-media {
     list-style: none;
     display: flex;
@@ -158,13 +189,13 @@ ul.social-media {
     flex-basis: 50%;
 }
 
-.form-input {
+.form-input { 
     width: 100%;
-    height: var( --height-imput );
+    height: var( --height-input );
     padding: 25px;
     margin-bottom: 1rem;
-    border: none;
     background-color: var( --anti-flash-white );
+    border: none;
     outline: none;
 }
 
@@ -175,7 +206,6 @@ ul.social-media {
     border: 1px solid transparent;
     margin: 1.6rem 0;
 }
-
 .btn--bg-black {
     background-color: var( --black );
     color: var( --white );
@@ -183,6 +213,7 @@ ul.social-media {
 }
 
 textarea.form-input {
-    height: calc( var(--height-input) * 3 );
+    height: calc( var( --height-input ) * 3 );
     resize: none;
 }
+

@@ -33,3 +33,6 @@
     align-items: center;
     gap: .5rem;
 }
+
+.hamburguer-icon:hover~nav.navbar {
+}

@@ -1,0 +1,7 @@
+@import '/css/objects/layout.css';
+@import '/css/objects/header.css';
+@import '/css/objects/sections/sections.css';
+@import '/css/objects/footer.css';
+
+/*Media queries siempre van al final*/
+@import '/css/objects/media-queries.css';

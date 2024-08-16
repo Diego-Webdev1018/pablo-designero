@@ -23,3 +23,9 @@ El propósito de esta plantilla era ejemplificar la manera como se contruye un s
 ```
 console.log("Pabo Designero")
 ```
+
+## Equipo
+| Nombre  | Ciudad |
+| ------------- | ------------- |
+| Yolbert Rivas  | Bogotá  |
+| Alfonso Vega  | Bogotá  |

@@ -1,10 +1,21 @@
 @media ( min-width: 768px ) {
+
+
+
     .hamburger-icon {
         display: none;
     }
 
     .navbar {
         display: block;
+    }
+
+    .main-menu {
+        display: flex;
+    }
+
+    .main-menu__open {
+        display: none;
     }
 
     .bio-content {

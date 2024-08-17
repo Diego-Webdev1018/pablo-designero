@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Designero</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Hoja de estilos  -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="header">
         <div class="container logo-navbar">
-            <div id="logo" class="logo">Logo</div>
+            
             <nav class="navbar">
+
+                <div id="logo" class="logo">
+                    <a href="#">Logo</a>
+                </div>
+
+                <input type="checkbox" id="toggle-main-menu">
+                <label for="toggle-main-menu" class="main-menu__open">Open</label>
+                <label for="toggle-main-menu" class="main-menu__close">Close</label>
+                <label for="toggle-main-menu" class="background">
+                    <span>Background</span>
+                </label>
+
                 <ul class="main-menu">
                     <li class="menu-item">
                         <a href="#">About</a>
@@ -27,8 +38,9 @@
                         <a href="#">Contact</a>
                     </li>
                 </ul>
+
             </nav>
-            <img class="hamburger-icon" src="./images/menu.svg" alt="Hamburger icon">
+            <!-- <img class="hamburger-icon" src="./images/menu.svg" alt="Hamburger icon"> -->
         </div>
     </header>
     <main class="main">

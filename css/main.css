@@ -1,7 +1,25 @@
-@import '/css/settings/variables.css';
-/*@import '/css/tools/';*/
-@import '/css/generic/normalize.css';
-@import '/css/elements/elements.css';
-@import '/css/objects/objects.css';
-@import '/css/components/components.css';
-/*@import '/css/utilities/';*/
+@import './settings/variables.css';
+/* @import './tools/'; */
+@import './generic/normalize.css';
+@import './elements/elements.css';
+@import './objects/objects.css';
+@import './components/components.css';
+/* @import './utilities/'; */
+
+/* Oculta estos elementos */
+#toggle-main-menu,
+.main-menu__close,
+.background {
+    display: none;
+}
+
+/** Crea interaccion  */
+#toggle-main-menu:checked ~ .main-menu__close,
+#toggle-main-menu:checked ~ .background,
+#toggle-main-menu:checked ~ .main-menu {
+    display: block;
+}
+
+#toggle-main-menu:checked ~ .main-menu__open {
+    display: none;
+}

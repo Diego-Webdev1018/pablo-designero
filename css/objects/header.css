@@ -1,16 +1,15 @@
+.background {
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+}
+
 .logo {
     font-size: 2rem;
     font-weight: 600;
-}
-
-.menu-item a {
-    text-decoration: none;
-    color: var( --color-menu-link );
-    font-size: 1.7rem;
-}
-
-.menu-item a:hover {
-    color: gray;
 }
 
 /* .logo-navbar {
@@ -24,15 +23,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    height: var(--header-height);
 }
 
 .main-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    justify-content: end;
     align-items: center;
+    display: none;
     gap: .5rem;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: var(--header-height);
+    background: #f2f2f2;
+    width: 18rem;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: var( --color-menu-link );
+    font-size: 1.7rem;
+    display: block;
+    padding: 1rem;
+}
+
+.menu-item a:hover {
+    color: gray;
 }
